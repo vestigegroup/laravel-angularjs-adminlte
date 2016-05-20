@@ -9,7 +9,7 @@ See the theme's Github repository for more details: https://github.com/almasaeed
 git clone git@bitbucket.org:LeandroHermes/laravel-angularjs-adminlte.git
 ```
 
-Direcionar prompt para dentro da pasta:
+cd to/repo/dir:
 
 ```
 composer install
