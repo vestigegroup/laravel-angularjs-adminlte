@@ -15,7 +15,7 @@ cd to/repo/dir:
 composer install
 npm install
 bower install
-gulp watch-dev # ou "gulp default" para produção
+gulp watch-dev # or "gulp default" for production
 ```
 
 Configure .env and adjust appConfig.baseURL on app.js
