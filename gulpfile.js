@@ -12,7 +12,7 @@ var config = {
     build_path_js: "./public/build/js",
     build_path_css: "./public/build/css",
     build_path_font: "./public/build/fonts",
-    build_path_images: "./public/build/images",
+    build_path_images: "./public/build/img",
     build_path_html: "./public/build/views",
 
     build_vendor_path_js: "./public/build/vendor/js",
@@ -22,7 +22,6 @@ var config = {
 
 config.vendor_path_js = [
     config.bower_path + '/jquery/dist/jquery.min.js',
-    config.bower_path + '/bootstrap/dist/js/bootstrap.min.js',
     config.bower_path + '/angular/angular.min.js',
     config.bower_path + '/angular-sanitize/angular-sanitize.min.js',
     config.bower_path + '/angular-strap/dist/angular-strap.min.js',
@@ -30,6 +29,8 @@ config.vendor_path_js = [
     config.bower_path + '/angular-route/angular-route.min.js',
     config.bower_path + '/angular-resource/angular-resource.min.js',
     config.bower_path + '/angular-messages/angular-messages.min.js',
+    config.bower_path + '/bootstrap/dist/js/bootstrap.min.js',
+    config.bower_path + '/angular-bootstrap/ui-bootstrap.min.js',
     config.bower_path + '/angular-bootstrap/ui-bootstrap-tpls.min.js',
     config.bower_path + '/angular-cookies/angular-cookies.min.js',
     config.bower_path + '/query-string/query-string.js',
@@ -48,9 +49,13 @@ config.vendor_path_css = [
     config.bower_path + '/angular-ui-notification/dist/angular-ui-notification.min.css',
     config.bower_path + '/angular-loading-bar/src/loading-bar.css',
     config.bower_path + '/angular-motion/dist/angular-motion.min.css',
+    config.bower_path + '/Ionicons/css/ionicons.min.css',
+    config.bower_path + '/components-font-awesome/css/font-awesome.min.css',
 ];
 config.vendor_path_font = [
-    config.bower_path + '/bootstrap/dist/fonts/*'
+    config.bower_path + '/bootstrap/dist/fonts/*',
+    config.bower_path + '/Ionicons/fonts/*',
+    config.bower_path + '/components-font-awesome/fonts/*'
 ];
 
 gulp.task('copy-views', function () {
@@ -70,7 +75,7 @@ gulp.task('copy-fonts', function () {
 });
 
 gulp.task('copy-images', function () {
-    gulp.src([config.assets_path + "/images/**/*"])
+    gulp.src([config.assets_path + "/img/**/*"])
         .pipe(gulp.dest(config.build_path_images))
         .pipe(liveReload());
 });

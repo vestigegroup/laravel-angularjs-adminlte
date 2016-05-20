@@ -1,9 +1,12 @@
-# Laravel 5.2 and AngularJS
+# Laravel 5.2 and AngularJS with AdminLTE
 
-Clean installation of Laravel with AngularJS and some useful components ready to be installed with dependency managers
+Clean installation of Laravel with AngularJS and AdminLTE theme applied, and some useful components ready to be installed with dependency managers
+
+See the theme's Github repository for more details: https://github.com/almasaeed2010/adminlte
+
 
 ```
-git clone git@bitbucket.org:LeandroHermes/laravel_angularjs.git
+git clone git@bitbucket.org:LeandroHermes/laravel-angularjs-adminlte.git
 ```
 
 Direcionar prompt para dentro da pasta:
@@ -15,4 +18,4 @@ bower install
 gulp watch-dev # ou "gulp default" para produção
 ```
 
-Ajustar baseURL no app.js
+Configure .env and adjust appConfig.baseURL on app.js

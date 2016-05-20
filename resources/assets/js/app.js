@@ -15,7 +15,6 @@ angular.module('app.services', ['ngResource']);
 app.provider('appConfig', [function () {
     var config = {
         baseUrl: 'http://localhost:8000'
-        //pusherKey: '38139765bb07eb74602b',
     };
 
     return {
