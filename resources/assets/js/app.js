@@ -15,7 +15,6 @@ angular.module('app.services', ['ngResource']);
 app.provider('appConfig', [function () {
     var config = {
         baseUrl: 'http://localhost:8000'
-        //baseUrl: 'http://localhost/Metronic_Laravel_AngularJS/public'
         //pusherKey: '38139765bb07eb74602b',
     };
 
@@ -35,6 +34,9 @@ app.config([
         $routeProvider
             .when('/', {
                 templateUrl: appConfigProvider.config.baseUrl + "/build/views/home.html"
+            })
+            .when('/login', {
+                templateUrl: appConfigProvider.config.baseUrl + "/build/views/login.html"
             })
             .otherwise({
                 resolve: ['$location', function ($location) {

@@ -1,11 +1,9 @@
-# Laravel 5.2 and AngularJS - Metronic Template
+# Laravel 5.2 and AngularJS
 
-Template Metronic applied in Laravel 5.2 with AngularJS
-Some basic components are registered in the init files of dependency managers
-
+Clean installation of Laravel with AngularJS and some useful components ready to be installed with dependency managers
 
 ```
-git clone git@bitbucket.org:LeandroHermes/metronic_laravel_angularjs.git
+git clone git@bitbucket.org:LeandroHermes/laravel_angularjs.git
 ```
 
 Direcionar prompt para dentro da pasta:
